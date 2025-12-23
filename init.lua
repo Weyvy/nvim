@@ -1,4 +1,5 @@
 require("configs.editor")
 require("configs.lazy")
 require("configs.keymaps")
+require("configs.lsp")
 require("configs.post_setup")
