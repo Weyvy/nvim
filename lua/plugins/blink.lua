@@ -44,7 +44,7 @@ return {
       signature = { enabled = true },
 
       sources = {
-        default = { 'lsp', 'copilot', 'path', 'snippets', 'buffer', 'sql', 'spell' },
+        default = { 'lsp', 'copilot', 'path', 'buffer', 'sql', 'spell' },
         providers = {
           spell = {
             name = 'Spell',

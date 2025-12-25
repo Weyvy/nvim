@@ -13,16 +13,25 @@ return {
     config = function(_, opts)
         local builtin = require('telescope.builtin')
 
-        vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope [F]ind [F]iles' })
+        vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope Find Files' })
         vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
-        vim.keymap.set('n', '<leader>fb', builtin.buffers, { desc = 'Telescope buffers' })
-        vim.keymap.set('n', '<leader>fh', builtin.help_tags, { desc = 'Telescope help tags' })
-
+        vim.keymap.set('n', '<leader>fr', builtin.registers, { desc = 'Telescope Find Rregisters' })
+        vim.keymap.set('n', '<leader><leader>', builtin.buffers, { desc = 'Telescope buffers' })
+        vim.keymap.set('n', '<leader>f.', builtin.help_tags, { desc = 'Telescope help tags' })
+        vim.keymap.set('n', '<leader>fs', builtin.lsp_document_symbols, { desc = 'Telescope Find Symbols' })
+        vim.keymap.set('n', '<leader>fi', builtin.lsp_incoming_calls, { desc = 'Telescope Find Incoming calls' })
+        vim.keymap.set('n', '<leader>fo', builtin.lsp_outgoing_calls, { desc = 'Telescope Find Outgoing calls' })
+        vim.keymap.set('n', '<leader>fu', builtin.lsp_references, { desc = 'Telescope Find References' })
+        vim.keymap.set('n', '<leader>fw', builtin.lsp_dynamic_workspace_symbols,
+            { desc = 'Telescope Find Workspace Symbols' })
+        vim.keymap.set('n', '<leader>fq', builtin.diagnostics, { desc = 'Telescope Find Diagnostics' })
+        vim.keymap.set("n", "<leader>fi", builtin.lsp_implementations, { desc = "[G]oto [I]mplementation" })
         vim.keymap.set('n', '<leader>fv', function()
             builtin.find_files({
                 cwd = vim.fn.stdpath('config'),
                 prompt_title = 'Neovim Config Files',
             })
         end, { desc = 'Find Neovim config files' })
+        vim.keymap.set("n", "gD", builtin.lsp_type_definitions, { desc = "[G]oto [T]ype definiton" })
     end
 }

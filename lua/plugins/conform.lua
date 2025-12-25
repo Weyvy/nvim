@@ -17,9 +17,11 @@ return  {
         local disable_filetypes = {}
         return {
           lsp_fallback = not disable_filetypes[vim.bo[bufnr].filetype],
+          timeout_ms = 500,
         }
       end,
       formatters_by_ft = {
+        zig = {"zigfmt"},
         lua = { "stylua" },
         python = { "black" },
         javascript = { "prettier" },
