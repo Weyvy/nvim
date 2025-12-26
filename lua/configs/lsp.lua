@@ -17,3 +17,13 @@ vim.lsp.enable('zls')
 vim.lsp.config('zls', {
   settings = nil,
 })
+
+vim.lsp.enable('clangd')
+vim.lsp.config('clangd', {
+  settings = nil,
+})
+
+vim.lsp.enable('tsserver')
+vim.lsp.config('tsserver', {
+  settings = nil,
+})

@@ -7,7 +7,15 @@
 # LSP
 - gopls
 - pyright
+- zls
+- clangd
+- tsserver
 
+# Formatter
+- prettier
+- clang-format
+- black
+- stylua
 
 # Nvim Tree File Navigation
 - **Enter / `o`** → Open file or folder
