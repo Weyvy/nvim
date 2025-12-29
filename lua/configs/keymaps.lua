@@ -27,3 +27,4 @@ vim.keymap.set("n", "gi", vim.lsp.buf.definition, { desc = "[G]oto [D]efinition"
 vim.keymap.set("n", "go", "<C-o>", { desc = "Go back (out)" })
 vim.keymap.set("n", "gb", ":bprevious<CR>", { desc = "Previous buffer" })
 vim.keymap.set("n", "gn", ":bnext<CR>", { desc = "Next buffer" })
+vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
