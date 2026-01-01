@@ -1,3 +1,2 @@
 -- customizaitons
-vim.cmd.colorscheme("catppuccin")
-
+vim.cmd.colorscheme("gruvbox")
