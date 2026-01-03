@@ -1,2 +1,2 @@
 -- customizaitons
-vim.cmd.colorscheme("gruvbox")
+vim.cmd.colorscheme("ayu-dark")
