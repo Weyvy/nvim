@@ -74,3 +74,9 @@ end)
 vim.opt.colorcolumn = "80"
 
 vim.opt.autoread = true
+
+
+vim.api.nvim_set_hl(0, "MatchParen", {
+    bg = "#3b4261",
+    bold = true,
+})

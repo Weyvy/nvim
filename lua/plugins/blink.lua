@@ -37,18 +37,6 @@ return {
               { "kind",       "kind_icon" },
               { "source_name" },
             },
-            components = {
-              label = {
-                kind_icon = {
-                  highlight =
-                      function(ctx)
-                        return { { group = ctx.kind_hl, priority = 20000 } }
-                      end
-                }
-
-              }
-            }
-
           },
         }
       },
