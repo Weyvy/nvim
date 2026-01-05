@@ -33,3 +33,4 @@
 # Deps
 - ripgrep
 - fd
+- xclip
