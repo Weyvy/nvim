@@ -10,6 +10,7 @@
 - zls
 - clangd
 - tsserver
+- luals
 
 # Formatter
 - prettier

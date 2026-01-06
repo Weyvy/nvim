@@ -51,32 +51,30 @@ vim.opt.splitbelow = true
 vim.opt.splitright = true
 
 -- folding
-vim.o.foldcolumn = '0'
+vim.o.foldcolumn = "0"
 vim.o.foldlevel = 99
 vim.o.foldlevelstart = 99
 vim.o.foldenable = true
 
--- misc
-vim.opt.confirm = true
-
 vim.api.nvim_create_autocmd("TextYankPost", {
-    desc = "Highlight when yanking (copying) text",
-    group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
-    callback = function()
-        vim.highlight.on_yank()
-    end,
+	desc = "Highlight when yanking (copying) text",
+	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+	callback = function()
+		vim.highlight.on_yank()
+	end,
 })
 
 vim.schedule(function()
-    vim.opt.clipboard = 'unnamedplus'
+	vim.opt.clipboard = "unnamedplus"
 end)
 
 vim.opt.colorcolumn = "80"
 
 vim.opt.autoread = true
 
-
 vim.api.nvim_set_hl(0, "MatchParen", {
-    bg = "#3b4261",
-    bold = true,
+	bg = "#3b4261",
+	bold = true,
 })
+
+vim.opt.confirm = false
