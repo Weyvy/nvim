@@ -32,6 +32,20 @@ return {
 
         telescope.load_extension("fzf")
 
+        vim.keymap.set("n", "gd", builtin.lsp_definitions, {
+            desc = "[G]oto [D]efinition"
+        })
+
+        vim.keymap.set("n", "gD", builtin.lsp_type_definitions, {
+            desc = "[G]oto [D]eclaration"
+        })
+
+        vim.keymap.set("n", "gi", builtin.lsp_implementations, {
+            desc = "[G]oto [I]mplementation"
+        })
+        vim.keymap.set("n", "gr", builtin.lsp_references, {
+            desc = "[G]oto [R]eferences"
+        })
         vim.keymap.set('n', '<leader>ff', builtin.find_files, { desc = 'Telescope Find Files' })
         vim.keymap.set('n', '<leader>fg', builtin.live_grep, { desc = 'Telescope live grep' })
         vim.keymap.set('n', '<leader>f;', builtin.registers, { desc = 'Telescope Find Rregisters' })
@@ -39,6 +53,9 @@ return {
         vim.keymap.set('n', '<leader>f.', builtin.help_tags, { desc = 'Telescope help tags' })
         vim.keymap.set('n', '<leader>fs', builtin.lsp_document_symbols, { desc = 'Telescope Find Symbols' })
         vim.keymap.set('n', '<leader>fi', builtin.lsp_incoming_calls, { desc = 'Telescope Find Incoming calls' })
+        vim.keymap.set("n", "<leader>fj", builtin.jumplist, {
+            desc = "Telescope Jump List",
+        })
         vim.keymap.set('n', '<leader>fo', builtin.lsp_outgoing_calls, { desc = 'Telescope Find Outgoing calls' })
         vim.keymap.set('n', '<leader>fu', builtin.lsp_references, { desc = 'Telescope Find References' })
         vim.keymap.set("n", "<leader>fr", function()
@@ -56,7 +73,6 @@ return {
                 prompt_title = 'Neovim Config Files',
             })
         end, { desc = 'Find Neovim config files' })
-        vim.keymap.set("n", "gD", builtin.lsp_type_definitions, { desc = "[G]oto [T]ype definiton" })
         vim.keymap.set("n", "<leader>cs", "<cmd>Telescope colorscheme<CR>", {
             desc = "Live colorscheme preview",
         })

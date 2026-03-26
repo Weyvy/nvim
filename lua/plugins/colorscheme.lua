@@ -35,6 +35,7 @@ return {
         blink_cmp = true,
         leap = true,
         copilot_vim = true,
+        nvimtree = true,
       },
     },
     config = function(_, opts)
@@ -69,10 +70,6 @@ return {
   {
     "Mofiqul/vscode.nvim",
     priority = 1000,
-    config = function()
-      vim.opt.termguicolors = true
-      vim.cmd.colorscheme("vscode")
-    end,
   },
   {
     "sainnhe/everforest",
@@ -80,7 +77,6 @@ return {
     config = function()
       vim.g.everforest_background = "medium"
       vim.g.everforest_enable_italic = 1
-      vim.cmd.colorscheme("everforest")
     end,
   },
   {
@@ -88,7 +84,6 @@ return {
     priority = 1000,
     config = function()
       vim.opt.termguicolors = true
-      vim.cmd.colorscheme("gruvbox")
     end,
   },
   {
@@ -107,9 +102,6 @@ return {
     'AlexvZyl/nordic.nvim',
     lazy = false,
     priority = 1000,
-    config = function()
-      require('nordic').load()
-    end
   },
   {
     'Shatur/neovim-ayu'

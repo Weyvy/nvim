@@ -18,13 +18,9 @@ vim.keymap.set('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagn
 vim.keymap.set('t', '<Esc><Esc>', '<C-\\><C-n>', { desc = 'Exit terminal mode' })
 
 
-
 vim.keymap.set("n", "<leader>rn", vim.lsp.buf.rename, { desc = "[R]e[n]ame" })
 vim.keymap.set("n", "<leader>ca", vim.lsp.buf.code_action, { desc = "[C]ode [A]ction" })
 vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover Documentation" })
-vim.keymap.set("n", "gd", vim.lsp.buf.declaration, { desc = "[G]oto [D]eclaration" })
-vim.keymap.set("n", "gi", vim.lsp.buf.definition, { desc = "[G]oto [D]efinition" })
-vim.keymap.set("n", "gb", "<C-o>", { desc = "Go back (out)" })
 vim.keymap.set("n", "gp", ":bprevious<CR>", { desc = "Previous buffer" })
 vim.keymap.set("n", "gn", ":bnext<CR>", { desc = "Next buffer" })
 vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
