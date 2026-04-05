@@ -76,5 +76,13 @@ return {
         vim.keymap.set("n", "<leader>cs", "<cmd>Telescope colorscheme<CR>", {
             desc = "Live colorscheme preview",
         })
+
+        vim.keymap.set('n', '<leader>Q', function()
+            require('telescope.builtin').diagnostics()
+        end, { desc = 'Diagnostics (workspace)' })
+
+        vim.keymap.set('n', '<leader>q', function()
+            require('telescope.builtin').diagnostics({ bufnr = 0 })
+        end, { desc = 'Diagnostics (buffer)' })
     end
 }

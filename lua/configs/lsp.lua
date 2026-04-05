@@ -27,3 +27,13 @@ vim.lsp.enable('tsserver')
 vim.lsp.config('tsserver', {
   settings = nil,
 })
+
+vim.lsp.enable('rust_analyzer')
+vim.lsp.config('rust_analyzer', {
+  settings = nil,
+})
+
+-- vim.lsp.enable('sqls')
+-- vim.lsp.config('sqls', {
+--   settings = nil,
+-- })

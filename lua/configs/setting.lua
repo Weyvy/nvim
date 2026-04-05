@@ -77,4 +77,9 @@ vim.api.nvim_set_hl(0, "MatchParen", {
 	bold = true,
 })
 
+
 vim.opt.confirm = false
+
+vim.diagnostic.config({
+	underline = true,
+})

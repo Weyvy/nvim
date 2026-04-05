@@ -1,4 +1,4 @@
-require("configs.editor")
+require("configs.setting")
 require("configs.lazy")
 require("configs.keymaps")
 require("configs.lsp")

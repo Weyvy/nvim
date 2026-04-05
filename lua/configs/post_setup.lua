@@ -1,2 +1,2 @@
 -- customizaitons
-vim.cmd.colorscheme("moonbow")
+vim.cmd.colorscheme("bark")
