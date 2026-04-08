@@ -23,3 +23,7 @@ vim.keymap.set("n", "K", vim.lsp.buf.hover, { desc = "Hover Documentation" })
 vim.keymap.set("n", "gp", ":bprevious<CR>", { desc = "Previous buffer" })
 vim.keymap.set("n", "gn", ":bnext<CR>", { desc = "Next buffer" })
 vim.keymap.set("n", "<leader>d", vim.diagnostic.open_float)
+
+vim.keymap.set("n", "gl", function()
+  vim.diagnostic.open_float(nil, { border = "rounded" })
+end)
