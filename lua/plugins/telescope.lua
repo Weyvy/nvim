@@ -65,7 +65,7 @@ return {
         end, { desc = "[F]ind [R]ecent (cwd)" })
         vim.keymap.set('n', '<leader>fw', builtin.lsp_dynamic_workspace_symbols,
             { desc = 'Telescope Find Workspace Symbols' })
-        vim.keymap.set('n', '<leader>fq', builtin.diagnostics, { desc = 'Telescope Find Diagnostics' })
+        -- vim.keymap.set('n', '<leader>fq', builtin.diagnostics, { desc = 'Telescope Find Diagnostics' })
         vim.keymap.set("n", "<leader>fi", builtin.lsp_implementations, { desc = "[G]oto [I]mplementation" })
         vim.keymap.set('n', '<leader>fv', function()
             builtin.find_files({

@@ -112,5 +112,13 @@ return {
   },
   {
     "arturgoms/moonbow.nvim"
+  },
+  {
+    "rose-pine/neovim",
+    name = "rose-pine",
+  },
+  {
+    "projekt0n/github-nvim-theme",
+    name = "github-theme",
   }
 }
