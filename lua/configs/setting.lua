@@ -83,3 +83,18 @@ vim.opt.confirm = false
 vim.diagnostic.config({
 	underline = true,
 })
+
+vim.o.winborder = "rounded"
+
+-- Rounded border for completion popup menus
+vim.o.pumborder = "rounded"
+
+-- Nicer popup behavior
+vim.o.completeopt = "menu,menuone,noselect"
+vim.o.pumheight = 12
+vim.o.winblend = 0
+vim.o.pumblend = 5
+
+-- Native command-line completion fallback
+vim.o.wildmenu = true
+vim.o.wildmode = "longest:full,full"
