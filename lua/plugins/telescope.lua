@@ -14,6 +14,7 @@ return {
         local telescope = require("telescope")
         local builtin = require("telescope.builtin")
 
+
         telescope.setup({
             pickers = {
                 colorscheme = {
@@ -27,6 +28,9 @@ return {
                     override_file_sorter = true,
                     case_mode = "smart_case",
                 },
+            },
+            defaults = {
+                wrap_results = true,
             },
         })
 

@@ -75,7 +75,7 @@ return {
     "sainnhe/everforest",
     priority = 1000,
     config = function()
-      vim.g.everforest_background = "medium"
+      vim.g.everforest_background = "hard"
       vim.g.everforest_enable_italic = 1
     end,
   },
@@ -83,7 +83,7 @@ return {
     "ellisonleao/gruvbox.nvim",
     priority = 1000,
     config = function()
-      vim.opt.termguicolors = true
+      vim.g.gruvebox_background = "hard"
     end,
   },
   {
@@ -120,5 +120,17 @@ return {
   {
     "projekt0n/github-nvim-theme",
     name = "github-theme",
-  }
+  },
+  {
+    'sainnhe/gruvbox-material',
+    lazy = false,
+    priority = 1000,
+    config = function()
+      vim.g.gruvbox_material_enable_italic = true
+      vim.g.gruvbox_material_foreground = 'mix'
+      vim.g.gruvbox_material_background = 'hard'
+      vim.g.gruvbox_material_enable_italic = true
+    end
+  },
+  { "savq/melange-nvim" }
 }

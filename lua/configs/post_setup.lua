@@ -1,2 +1,2 @@
 -- customizaitons
-vim.cmd.colorscheme("bark")
+vim.cmd.colorscheme("gruvbox-material")
