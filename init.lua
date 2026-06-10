@@ -1,5 +1,5 @@
-require("configs.setting")
-require("configs.lazy")
-require("configs.keymaps")
-require("configs.lsp")
-require("configs.post_setup")
+require("config.setting")
+require("config.keymaps")
+require("plugin.plugin")
+require("lsp.lsp")
+
