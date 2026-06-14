@@ -80,14 +80,10 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 vim.opt.colorcolumn = "80"
 
 -- tab and indent options
-vim.opt.tabstop = 4
-vim.opt.softtabstop = 4
-vim.opt.shiftwidth = 4
 vim.opt.expandtab = true
 vim.opt.smartindent = true
 vim.opt.breakindent = true
 vim.opt.autoindent = true
-
 
 vim.diagnostic.config({
 	underline = true,
@@ -107,3 +103,4 @@ vim.o.pumblend = 5
 -- Native command-line completion fallback
 vim.o.wildmenu = true
 vim.o.wildmode = "longest:full,full"
+

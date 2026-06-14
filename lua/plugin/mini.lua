@@ -14,7 +14,7 @@ require("mini.ai").setup({
 	n_lines = 500,
 })
 
-require('mini.surround').setup()
+require("mini.surround").setup()
 
 require("mini.pairs").setup()
 
@@ -28,3 +28,6 @@ statusline.setup({
 statusline.section_location = function()
 	return "%2l:%-2v"
 end
+
+require("mini.comment").setup()
+

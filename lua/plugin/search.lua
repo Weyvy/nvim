@@ -172,6 +172,59 @@ end, {
 	desc = "Diagnostics buffer",
 })
 
+vim.keymap.set("n", "<leader>d", function()
+	local current_buf = vim.api.nvim_get_current_buf()
+	local current_file = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(current_buf), ":p")
+
+	local qf_items = vim.fn.getqflist()
+	local buffer_items = {}
+
+	for _, item in ipairs(qf_items) do
+		local same_buffer = false
+
+		if item.bufnr and item.bufnr ~= 0 then
+			local ok, item_file = pcall(vim.api.nvim_buf_get_name, item.bufnr)
+			if ok then
+				item_file = vim.fn.fnamemodify(item_file, ":p")
+				same_buffer = item_file == current_file
+			end
+		end
+
+		if not same_buffer and item.filename then
+			local item_file = vim.fn.fnamemodify(item.filename, ":p")
+			same_buffer = item_file == current_file
+		end
+
+		if same_buffer then
+			table.insert(buffer_items, item)
+		end
+	end
+
+	if vim.tbl_isempty(buffer_items) then
+		vim.notify("No quickfix items for current buffer", vim.log.levels.INFO)
+		return
+	end
+
+	vim.fn.setloclist(0, {}, "r", {
+		title = "Buffer Quickfix",
+		items = buffer_items,
+	})
+
+	builtin.loclist({
+		prompt_title = "Buffer Quickfix",
+	})
+end, {
+	desc = "Quickfix buffer",
+})
+
+vim.keymap.set("n", "<leader>D", function()
+	builtin.quickfix({
+		prompt_title = "Project Quickfix",
+	})
+end, {
+	desc = "Quickfix project",
+})
+
 vim.api.nvim_create_autocmd("LspAttach", {
 	group = vim.api.nvim_create_augroup("telescope-lsp-attach", { clear = true }),
 	callback = function(event)
@@ -248,3 +301,4 @@ vim.o.foldenable = true
 
 vim.o.foldmethod = "expr"
 vim.o.foldexpr = "v:lua.vim.treesitter.foldexpr()"
+
