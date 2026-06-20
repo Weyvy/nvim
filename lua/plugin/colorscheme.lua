@@ -59,6 +59,10 @@ vim.pack.add({
 		src = "https://github.com/savq/melange-nvim",
 		name = "melange-nvim",
 	},
+	{
+		src = "https://github.com/BoHomola/vsassist.nvim",
+		name = "vsassit",
+	},
 })
 
 require("catppuccin").setup({
@@ -120,5 +124,12 @@ vim.g.gruvbox_background = "hard"
 vim.g.gruvbox_material_foreground = "mix"
 vim.g.gruvbox_material_background = "hard"
 vim.g.gruvbox_material_enable_italic = true
+
+require("rose-pine").setup({
+	disable_background = true,
+	styles = {
+		italic = false,
+	},
+})
 
 vim.cmd.colorscheme("gruvbox-material")

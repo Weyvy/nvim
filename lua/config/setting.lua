@@ -104,3 +104,5 @@ vim.o.pumblend = 5
 vim.o.wildmenu = true
 vim.o.wildmode = "longest:full,full"
 
+vim.opt.wrap = false
+vim.opt.linebreak = true

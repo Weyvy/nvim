@@ -23,3 +23,5 @@ vim.keymap.set("n", "[b", "<cmd>bprevious<CR>", {
 vim.keymap.set("n", "gl", vim.diagnostic.open_float, {
 	desc = "Show diagnostic message",
 })
+
+vim.keymap.set("n", "<Tab>", "<C-^>", { desc = "Alternate buffer" })
