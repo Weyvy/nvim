@@ -123,7 +123,13 @@ vim.keymap.set("n", "<leader>sc", builtin.commands, {
 	desc = "[S]earch [C]ommands",
 })
 
-vim.keymap.set("n", "<leader><leader>", builtin.buffers, {
+vim.keymap.set("n", "<leader><leader>", function()
+	builtin.buffers({
+		sort_mru = true,
+		sort_lastused = true,
+		ignore_current_buffer = true,
+	})
+end, {
 	desc = "Find existing buffers",
 })
 
@@ -301,4 +307,3 @@ vim.o.foldenable = true
 
 vim.o.foldmethod = "expr"
 vim.o.foldexpr = "v:lua.vim.treesitter.foldexpr()"
-
