@@ -115,8 +115,12 @@ vim.keymap.set("n", "<leader>sr", builtin.resume, {
 	desc = "[S]earch [R]esume",
 })
 
-vim.keymap.set("n", "<leader>ss", builtin.oldfiles, {
-	desc = "[S]earch Recent Files",
+vim.keymap.set("n", "<leader>ss", function()
+	builtin.oldfiles({
+		cwd_only = true,
+	})
+end, {
+	desc = "[S]earch Recent Files in Current Directory",
 })
 
 vim.keymap.set("n", "<leader>sc", builtin.commands, {
