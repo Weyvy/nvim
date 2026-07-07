@@ -182,6 +182,10 @@ end, {
 	desc = "Diagnostics buffer",
 })
 
+vim.keymap.set("n", "<leader>sj", builtin.jumplist, {
+	desc = "[S]earch [J]ump List",
+})
+
 vim.keymap.set("n", "<leader>d", function()
 	local current_buf = vim.api.nvim_get_current_buf()
 	local current_file = vim.fn.fnamemodify(vim.api.nvim_buf_get_name(current_buf), ":p")
