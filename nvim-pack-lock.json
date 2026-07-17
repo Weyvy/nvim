@@ -100,6 +100,10 @@
       "rev": "d3641f9aa86e7460b14d9f4479e7454f88cc6b2d",
       "src": "https://codeberg.org/andyg/leap.nvim"
     },
+    "lush": {
+      "rev": "9c60ec2279d62487d942ce095e49006af28eed6e",
+      "src": "https://github.com/rktjmp/lush.nvim"
+    },
     "melange-nvim": {
       "rev": "ce42f6b629beeaa00591ba73a77d3eeac4cf28ce",
       "src": "https://github.com/savq/melange-nvim"
@@ -111,6 +115,10 @@
     "moonbow.nvim": {
       "rev": "baf62d035785910c5a368cbde5872190a56afb30",
       "src": "https://github.com/arturgoms/moonbow.nvim"
+    },
+    "neo_solarized": {
+      "rev": "3c55ad358c062aa4879950c4f83b4deeac6b72df",
+      "src": "https://github.com/Tsuzat/NeoSolarized.nvim"
     },
     "neovim-ayu": {
       "rev": "e5a9f0fa2918d6b5f57c21b3ac014314ee5e41c8",
@@ -169,6 +177,10 @@
       "rev": "b9cdbdf42f7ac5a659204cd5926017c7ff724a19",
       "src": "https://github.com/m4xshen/smartcolumn.nvim"
     },
+    "solarized_light": {
+      "rev": "fe02ed49cc017cc93657bd6306a2624394611c69",
+      "src": "https://github.com/shaunsingh/solarized.nvim"
+    },
     "telescope-fzf-native.nvim": {
       "rev": "b25b749b9db64d375d782094e2b9dce53ad53a40",
       "src": "https://github.com/nvim-telescope/telescope-fzf-native.nvim"
@@ -208,6 +220,10 @@
     "which-key.nvim": {
       "rev": "3aab2147e74890957785941f0c1ad87d0a44c15a",
       "src": "https://github.com/folke/which-key.nvim"
+    },
+    "zenbones": {
+      "rev": "8304d8df9b823ff11e103afa62f38c39f534abe6",
+      "src": "https://github.com/zenbones-theme/zenbones.nvim"
     }
   }
 }

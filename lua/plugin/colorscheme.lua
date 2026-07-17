@@ -63,6 +63,18 @@ vim.pack.add({
 		src = "https://github.com/BoHomola/vsassist.nvim",
 		name = "vsassit",
 	},
+	{
+		src = "https://github.com/Tsuzat/NeoSolarized.nvim",
+		name = "neo_solarized",
+	},
+	{
+		src = "https://github.com/rktjmp/lush.nvim",
+		name = "lush",
+	},
+	{
+		src = "https://github.com/zenbones-theme/zenbones.nvim",
+		name = "zenbones",
+	},
 })
 
 require("catppuccin").setup({
