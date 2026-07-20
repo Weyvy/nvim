@@ -48,7 +48,7 @@ conform.setup({
 		lua = { "stylua" },
 		python = { "black" },
 		javascript = { "prettier" },
-		go = { "gofmt" },
+		go = { "goimports" },
 		c = { "clang-format" },
 		cpp = { "clang-format" },
 	},
@@ -62,4 +62,3 @@ vim.keymap.set({ "n", "v" }, "<leader>p", function()
 end, {
 	desc = "[F]ormat buffer",
 })
-

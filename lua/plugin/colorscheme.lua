@@ -144,4 +144,4 @@ require("rose-pine").setup({
 	},
 })
 
-vim.cmd.colorscheme("gruvbox-material")
+vim.cmd.colorscheme("melange")
