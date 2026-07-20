@@ -106,3 +106,8 @@ vim.o.wildmode = "longest:full,full"
 
 vim.opt.wrap = false
 vim.opt.linebreak = true
+
+-- Spell
+vim.opt.spell = true
+vim.opt.spelllang = { "en_us" }
+vim.opt.spelloptions = "camel"
