@@ -75,6 +75,14 @@ vim.pack.add({
 		src = "https://github.com/zenbones-theme/zenbones.nvim",
 		name = "zenbones",
 	},
+	{
+		src = "https://github.com/WTFox/luna.nvim",
+		name = "luna",
+	},
+	{
+		src = "https://github.com/Aejkatappaja/cendre",
+		name = "cendre",
+	},
 })
 
 require("catppuccin").setup({
@@ -142,6 +150,17 @@ require("rose-pine").setup({
 	styles = {
 		italic = false,
 	},
+})
+
+require("luna").setup({
+	transparent = false,
+	accent = 1.0, -- 0-1, blends syntax accents toward grey_light; 1 = full color
+	plugins = {
+		all = true, -- enable every plugin integration unconditionally
+		auto = true, -- when plugins.all is false, autodetect via lazy.nvim
+	},
+	on_colors = function(colors) end,
+	on_highlights = function(highlights, colors) end,
 })
 
 vim.cmd.colorscheme("melange")

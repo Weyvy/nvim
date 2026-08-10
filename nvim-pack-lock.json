@@ -28,6 +28,10 @@
       "rev": "0303a7208dba448c459767486a38a6ec05c4216b",
       "src": "https://github.com/catppuccin/nvim"
     },
+    "cendre": {
+      "rev": "9439ff8e1b7b9af952e922bf62b3f367ea02fe26",
+      "src": "https://github.com/Aejkatappaja/cendre"
+    },
     "cmp-sql": {
       "rev": "54193ac99e3855c6ffaa36f83a7c50213df03157",
       "src": "https://github.com/ray-x/cmp-sql"
@@ -99,6 +103,10 @@
     "leap": {
       "rev": "d3641f9aa86e7460b14d9f4479e7454f88cc6b2d",
       "src": "https://codeberg.org/andyg/leap.nvim"
+    },
+    "luna": {
+      "rev": "575b27d51cae6d5c07c769ed8754e51ea9ad8c85",
+      "src": "https://github.com/WTFox/luna.nvim"
     },
     "lush": {
       "rev": "9c60ec2279d62487d942ce095e49006af28eed6e",

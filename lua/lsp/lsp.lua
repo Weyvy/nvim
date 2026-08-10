@@ -127,3 +127,8 @@ vim.lsp.config("rust_analyzer", {
 	settings = nil,
 })
 vim.lsp.enable("rust_analyzer")
+
+vim.lsp.config("wgsl_analyzer", {
+	settings = nil,
+})
+vim.lsp.enable("wgsl_analyzer")
