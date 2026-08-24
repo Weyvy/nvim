@@ -32,6 +32,10 @@
       "rev": "9439ff8e1b7b9af952e922bf62b3f367ea02fe26",
       "src": "https://github.com/Aejkatappaja/cendre"
     },
+    "circadia": {
+      "rev": "1054edc976272a6880e3f16e4aaa5a20484e0cad",
+      "src": "https://github.com/tanmaymanojgandhi/circadia"
+    },
     "cmp-sql": {
       "rev": "54193ac99e3855c6ffaa36f83a7c50213df03157",
       "src": "https://github.com/ray-x/cmp-sql"
