@@ -83,6 +83,10 @@ vim.pack.add({
 		src = "https://github.com/Aejkatappaja/cendre",
 		name = "cendre",
 	},
+	{
+		src = "https://github.com/tanmaymanojgandhi/circadia",
+		name = "circadia",
+	},
 })
 
 require("catppuccin").setup({
