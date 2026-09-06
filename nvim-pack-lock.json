@@ -8,6 +8,10 @@
       "rev": "c7a32bec8105a1ceddb9fcc90b713dabde5e7e5e",
       "src": "https://github.com/metalelf0/base16-black-metal-scheme"
     },
+    "bigfile": {
+      "rev": "33eb067e3d7029ac77e081cfe7c45361887a311a",
+      "src": "https://github.com/LunarVim/bigfile.nvim"
+    },
     "blink-cmp-spell": {
       "rev": "2bd0e0d5e7735c047e72b6918a0458f3e8fadaba",
       "src": "https://github.com/ribru17/blink-cmp-spell"
